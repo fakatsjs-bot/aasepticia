@@ -1,0 +1,1154 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/aloomaspecial/alooma.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png">
+    
+
+        <title>Well-Maintained Portable Restroom Rental Nationwide | USA Porta Potty Rental</title>
+        <meta name="title" content="Well-Maintained Portable Restroom Rental Nationwide | USA Porta Potty Rental" />
+        <meta name="robots" content="NOODP, NOYDIR, index, follow" />
+        <link rel="canonical" href="https://aasepticia.com/" />
+        <meta name="description" content="America's portable toilet and restroom trailer rental provider. From weddings to construction sites, we deliver clean facilities and reliable service coast to coast." />
+        <meta property="og:title" content="Well-Maintained Portable Restroom Rental Nationwide | USA Porta Potty Rental" />
+        <meta property="og:description" content="America's portable toilet and restroom trailer rental provider. From weddings to construction sites, we deliver clean facilities and reliable service coast to coast." />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="AAP Porta Potty Rental" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+    .jumbotron {width: 100%;height: 500px;}
+        .jumbotron h2 {padding-bottom: 0;}
+    </style>
+<link rel="stylesheet" href="static/aloomaspecial/alooma.css"><link rel="stylesheet" href="static/aloomaspecial/alooma2.css"></head>
+
+<body>       
+</header>
+            <!--/row-->
+        <!--container-->
+    </header>
+    <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="static/images/header-logo.png" alt="logo" style="width: auto; height: 30px;">
+            <span style="margin-left: 8px; font-weight: bold; color: black;">Porta-Potty</span>
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ml-auto"> <li class="nav-item active">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#review">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ourservices">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:870306-3280" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3" style="background-color: red; border: solid white; border-radius: 10px;">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!--Section-1-->
+    <section class="section-1">
+        <div class="jumbotron d-flex align-items-center">
+            <div class="gradient"></div>
+            <div class="container-fluid content">
+                <h1 data-aos="fade-up" data-aos-delay="300" style="margin-bottom: 10px;">AAP Porta Potty Rental <br>USA</h1>
+                <p data-aos="fade-up" data-aos-delay="500" style="color: white;" style="margin-bottom: 10px;">Ensure clean and reliable restroom access with our professional porta potty rentals. Perfect for construction sites, <br>outdoor events, and gatherings, our units arrive sanitized and ready to use. We provide quick delivery, routine servicing, <br>and prompt pickup for a convenient sanitation solution.</p>
+                <div class="text-center my-3">
+  <a href="tel:870306-3280" 
+     class="btn call-btn text-white" style="margin-top: -5px;">
+     Click Here To Call Us (870) 306-3280
+  </a>
+</div>
+    </section>
+    <!--Section-2-->
+       <div id="output"></div>
+    <script>
+        
+        function getContents(selectedContents, splitInfo) {
+            let [header, paragraph] = selectedContents.split(splitInfo);
+            header = header.replace(/<br>/g, '');
+            paragraph = paragraph.replace(/<br><br>/g, '<br>');
+
+            let secondPart = '';
+            if (paragraph.includes('<list>')) {
+                let [partParagraph, listParagraph] = paragraph.split('<list>');
+                let listItems = listParagraph.replace(/<br>/g, '').replace(/\n/g, '').split('^^');
+                let appendAllList = listItems.map(item => `<li>${item}</li>`).join('');
+                secondPart = `<ul>${appendAllList}</ul>`;
+                return [header, partParagraph, secondPart];
+            }
+            return [header, paragraph, secondPart];
+        }
+
+        function cleanText(htmlContent) {
+            let result = htmlContent;
+            let regex = /{([^{}()]+)}/g;
+            result = result.replace(regex, (match, p1) => {
+                if (p1.includes('|')) {
+                    let options = p1.split('|');
+                    return options[Math.floor(Math.random() * options.length)];
+                }
+                return p1;
+            });
+            return result.replace(/{|}/g, '');
+        }
+
+        function handleTemplate(option1, option2) {
+            return Math.random() > 0.5 ? option1 : option2;
+        }
+
+        function generateContentsBody(phoneNumber, longForm, shortForm, imageList, data, siteName) {
+            data = data.replace(/&amp;/g, 'and').replace(/\n/g, '<br>').replace(/<br><br><br>/g, '<br>').trim();
+            data = cleanText(data);
+            let allReformattedBody = '';
+            let usedImage = [];
+            let sanitizedPhone = phoneNumber.replace(/\s|\(|\)|-/g, '');
+            let phoneNumberUrl = `tel:${sanitizedPhone}`;
+            let allData = data.split('$$');
+
+            let myNini = 0;
+            allData.forEach(selectedContents => {
+                selectedContents = selectedContents.trim().replace(/\n/g, '');
+                let singleTemplateChecker = '';
+                let replace_long_form= `<div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>`;
+                let replace_short_form= `<div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>`;
+                
+                if (selectedContents.includes('%%')) {
+                    let multipleChecker = selectedContents.split('%%').length;
+                    
+                    if (selectedContents.includes('<review>')) {
+                        singleTemplateChecker = '<template9>';
+                    }else if (selectedContents.includes('<faq>')) {
+                        singleTemplateChecker = '<template10>';
+                    } else if (multipleChecker === 2) {
+                        singleTemplateChecker = '<template7>';
+                    } else if (multipleChecker === 3) {
+                        singleTemplateChecker = '<template5>';
+                    }
+                } else {
+                    if (selectedContents.includes('<contact>')) {
+                        singleTemplateChecker = '<template8>';
+                    }  else {
+                        if (myNini === 0) {
+                            singleTemplateChecker = handleTemplate('<template1>', '<template4>');
+                        } else if (myNini === 2) {
+                            singleTemplateChecker = handleTemplate('<template2>', '<template3>');
+                        } else {
+                            singleTemplateChecker = '<template6>';
+                        }
+                        myNini++;
+                    }
+                }
+                
+                if (singleTemplateChecker === '<template1>' ||
+                    singleTemplateChecker === '<template2>' ||
+                    singleTemplateChecker === '<template3>' ||
+                    singleTemplateChecker === '<template4>'
+                ) {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    if (singleTemplateChecker === '<template1>'){
+                        let templateData1 = `<!-- Template 1.1 Start -->
+                        <br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template1 h2alooma">aloomaidheader</h2>
+                                    <p class="template1 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 1.1 End -->`;
+                        templateData = templateData1;
+                    }
+                    else if (singleTemplateChecker === '<template2>') {
+                        let templateData2 = `<!-- Template 2 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="ourservices">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <h2 class="template2 mx-auto">aloomaidheader </h2>
+                                <p class="template2 palooma mx-auto">aloomaidparagraph
+                                </p>
+                                <div class="col-m-8 col-l-8">
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                
+                            </div>
+                            </section>  
+                        </div>
+
+                        <!-- Template 2 End -->`;
+                        templateData = templateData2;
+                    }
+                    else if (singleTemplateChecker === '<template3>') {
+                        let templateData3 = `<!-- Template 3 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="h2alooma template3">aloomaidheader</h2>
+                                        <p class="template3 palooma">aloomaidparagraph
+                                        </p>
+                                aloomalistdata
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                
+                                        <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <!-- Template 3 End -->`;
+                        templateData = templateData3;
+                    }
+                    else if (singleTemplateChecker === '<template4>') {
+                        let templateData4 = `<!-- Template 4 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-6 col-l-6">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph
+                                        </p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                        
+                                    </div>
+                                    <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+                                </div>
+                        
+                                
+                            </section>
+                        </div>
+
+                        <!-- Template 4 End -->`;
+                        templateData = templateData4;
+                    }
+                    if (longForm.length > 3) {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(/aloomalongform/g, longForm)
+                            .replace(/aloomashortform/g, shortForm)
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    } else {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(replace_long_form, '')
+                            .replace(replace_short_form, '')
+                            .replace(/col-m-6 col-l-6/g, '')
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    }
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template5>') {
+                    
+                    let templateData = `<!-- Template 5 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="About">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">
+                                    aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 5 End -->`;
+                    let allDataSplit = selectedContents.split('%%');
+                    
+                    allDataSplit.forEach(dataSplit => {
+                        let [header, mainParagraph, secondPart] = getContents(dataSplit, '<h2>');
+                        templateData = templateData
+                            .replace(/aloomaidheader/, header)
+                            .replace(/aloomaidparagraph/, mainParagraph)
+                            .replace(/aloomalistdata/, secondPart)
+                            .replace(/aloomalongform/, longForm)
+                            .replace(/aloomashortform/, shortForm)
+                            .replace(/aloomaidphonenumberful/, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/, phoneNumberUrl);
+                    });
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template6>') {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    let templateData = `<!-- Template 6 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph</p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                    <div class="col-m-4 col-l-4">
+                                        <img style="width: 100%" class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                        <br>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 6 End -->`;
+                    let counter = 0;
+                    let pickImage;
+                    do {
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        counter++;
+                    } while (usedImage.includes(pickImage) && counter < 20);
+                    usedImage.push(pickImage);
+                    let altText = pickImage.split('.')[0];
+                    
+                    templateData = templateData.replace('aloomaidheader', header)
+                        .replace('aloomaidparagraph', mainParagraph)
+                        .replace('aloomalistdata', secondPart)
+                        .replace('aloomalongform', longForm)
+                        .replace('aloomashortform', shortForm)
+                        .replace('aloomaidphonenumberful', phoneNumber)
+                        .replace('aloomaidphonenumberurl', phoneNumberUrl)
+                        .replace('aloomaidpickimage', pickImage)
+                        .replace('aloomaidalttitle', altText);
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template7>'){
+                    let counter = 0, pickImage, pickImage1;
+                    while (counter < 20) {
+                        counter++;
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage)) break;
+                    }
+
+                    usedImage.push(pickImage);
+
+                    let counter1 = 0;
+                    while (counter1 < 20) {
+                        counter1++;
+                        pickImage1 = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage1)) break;
+                    }
+
+                    let altText = pickImage.split('.')[0];
+                    let altText1 = pickImage1.split('.')[0];
+
+                    let templateData = `<!-- template 7 -- two subtopic with a list and image-->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    <br><br>
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                    <br><br>
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>`;
+
+                    let allDataSplit = selectedContents.split("%%");
+                    
+                    allDataSplit.forEach(data => {
+                        let [ header, mainParagraph, secondPart ] = getContents(data, "<h2>");
+                        
+                        templateData = templateData
+                            .replace("aloomaidheader", header)
+                            .replace("aloomaidparagraph", mainParagraph)
+                            .replace("aloomalistdata", secondPart)
+                            .replace("aloomalongform", longForm)
+                            .replace("aloomashortform", shortForm)
+                            .replace("aloomaidphonenumberful", phoneNumber)
+                            .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                            .replace("aloomaidpickimage", pickImage)
+                            .replace("aloomaidpickimage", pickImage1)
+                            .replace("aloomaidalttitle", altText)
+                            .replace("aloomaidalttitle", altText1);
+                    });
+
+                    allReformattedBody += templateData;
+                    usedImage.push(pickImage1);
+                }
+                else if (singleTemplateChecker === "<template8>") {
+                    // Template 8: Contact template with 1 subtopic
+                    let [ header, mainParagraph, secondPart ] = getContents(selectedContents, "<h2>");
+                    let templateData = `<br><br><br><br>
+                        <div class="containeralooma" id="contact">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                    `;
+
+                    templateData = templateData
+                        .replace("aloomaidheader", header)
+                        .replace("aloomaidparagraph", mainParagraph)
+                        .replace("aloomalistdata", secondPart)
+                        .replace("aloomalongform", longForm)
+                        .replace("aloomashortform", shortForm)
+                        .replace("aloomaidphonenumberful", phoneNumber)
+                        .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                        .replace("<contact>", "");
+
+                    allReformattedBody += templateData;
+                } 
+                else if (singleTemplateChecker === "<template9>") {
+                    // Template 9: Reviews
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<br><br><br><br>
+                    <div class="col-m-4">
+                        <i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i>
+                        <p class="template4 palooma">aloomaidcomments</p>
+                        <label for="" style="float: right;">aloomaidcommenname</label>
+                    </div>`;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<!-- Reviews  -->
+                    <br><br><br><br>
+                    <div class="containeralooma" id="review">
+                        <section class="boxalooma" style="text-align: center;">
+                        <h2 class="heading-with-line template4 h2alooma">Customer Reviews</h2>
+                        <div class="row">
+                            aloomaidallcomments
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<review>", "");
+
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === "<template10>") {
+                    // Template 9: Faq
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<h4 class="template4 palooma">aloomaidcomments</h4>
+                    <p>aloomaidcommenname</p>
+                    `;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<br><br><br><br>
+                    <div class="containeralooma" id="contact">
+                        <section class="boxalooma">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="template4 h2alooma" style="margin-left: 400px;">Frequently Asked Questions in USA</h2>
+                                aloomaidallcomments
+                                
+                            </div>
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<faq>", "");
+
+                    allReformattedBody += templateData;
+                }
+                
+            });
+            
+
+            document.getElementById("output").innerHTML = allReformattedBody;
+        }
+
+        // Example usage
+        document.addEventListener("DOMContentLoaded", function() {
+            let sampleData = `Your Trusted Partner for Portable Restroom Rentals Throughout America<h2>
+
+The outdoor craft fair you've organized is expecting thousands of visitors but the venue offers only two permanent restrooms. Your demolition crew begins tearing out bathrooms next week, leaving the jobsite without facilities for a month. A milestone anniversary party at the lakehouse requires something more refined than asking guests to use the cabin's single bathroom. USA Porta Potty Rental steps in precisely when situations like these arise. We provide porta potty rental and portable bathroom solutions to customers in every corner of the United States, from rural properties to urban event spaces. Our reputation rests on showing up prepared, delivering equipment that works, and supporting rentals with consistent servicing that keeps facilities presentable throughout your project or event.
+
+$$
+
+Potty Trailer Rental<h2>
+
+When individual portable units cannot serve your crowd efficiently, potty trailers provide the answer. These multi-stall facilities handle high-volume situations at festivals, tournaments, and community gatherings nationwide. Interior amenities include proper lighting, ventilation, and separate compartments that keep traffic flowing smoothly.
+
+%%
+
+Portable Bathroom with Sink<h2>
+
+Integrated sink facilities eliminate the need for separate handwashing stations at your event or worksite. Our portable bathroom and sink combinations support hygiene requirements at food service events, medical screenings, and childcare programs across the country. Guests appreciate the convenience of washing hands immediately after using facilities.
+
+$$
+
+Nice Porta Potty<h2>
+
+Standard portable restrooms serve functional needs, but some occasions call for something noticeably better. Our nice porta potty options feature upgraded interiors, superior ventilation, and enhanced sanitation products. Hosts from Massachusetts to Montana choose these mid-tier units when guest comfort matters without requiring full luxury amenities.
+
+%%
+
+Portable Restroom with Shower<h2>
+
+Bathing needs arise at extended outdoor events, production shoots, and emergency response situations. Our shower-equipped portable restrooms provide private bathing spaces with hot water capability. Self-contained systems deploy anywhere from Arizona film locations to Florida disaster relief staging areas.
+
+$$
+
+Bathroom Rentals for Weddings<h2>
+
+Outdoor wedding venues require restroom facilities matching the occasion's elegance. Our wedding bathroom rental program includes options from refined single units to spacious trailers with climate control. Couples hosting celebrations from Pacific Northwest forests to Southern plantation grounds trust our equipment to serve guests beautifully.
+
+%%
+
+ADA Portable Toilet<h2>
+
+Accessibility compliance ensures all guests can participate comfortably in your event or access facilities at your worksite. Our ADA portable toilets feature spacious interiors, support railings, and accessible entries meeting federal guidelines. Inclusive facilities serve communities nationwide without exception.
+
+$$
+
+
+
+<review>
+
+Our annual show draws 5,000 visitors to a field with zero facilities. USA Porta Potty Rental delivered twenty units, positioned them strategically, and serviced them twice during the two-day event. Zero complaints from attendees, that's a first.<h2>— Daniel K., Demolition Contractor
+
+%%
+
+Gutting bathrooms means no facilities on site for weeks. These folks dropped off units the morning we started demo and picked them up the day after inspection. Weekly servicing kept everything usable. Exactly what crews need.<h2>— Sharon T., Mother of the Bride
+
+%%
+
+My daughter's outdoor wedding needed restrooms that wouldn't embarrass us in front of 150 guests. The trailer USA Porta Potty Rental provided looked like it belonged at a country club. Multiple people asked if it was permanent.<h2>— Carlos R., Emergency Services Coordinator
+
+$$
+
+Contact Us<h2>
+
+Portable restroom rental anywhere in America begins with sharing your requirements. Call our team or submit details online, we respond during business hours, typically within a few hours. After discussing your situation, we'll recommend equipment, provide clear pricing, and schedule logistics around your timeline. Delivery crews handle setup at your specified location. Servicing maintains facilities throughout your rental, and pickup occurs when you're finished. USA Porta Potty Rental manages every step so sanitation never distracts from your event or project.`;
+            let dataList = sampleData.includes('@@@') 
+                ? sampleData.split('@@@').map(item => item.trim()) 
+                : [sampleData.trim()];
+
+            // Pick one at random
+            let selectedData = dataList[Math.floor(Math.random() * dataList.length)];
+            generateContentsBody(`(870) 306-3280`, ` `, ` `, ['static/images/Clean Portable Restrooms.jpg', 'static/images/construction site portapotty.jpg', 'static/images/double unit portapotty.jpg', 'static/images/Event Porta Potty.jpg', 'static/images/Event Restroom Trailer.jpg', 'static/images/island portapotty brand.jpg', 'static/images/Outdoor Porta Potty Rental.jpg', 'static/images/Porta Potty Event.jpg', 'static/images/Portable Toilet for Sports Events.jpg', 'static/images/Portable toilet in the house.jpg', 'static/images/portapotty maintenance service.jpg', 'static/images/Relaible Portable Toilet.jpg', 'static/images/Reliable Porta Potty Solutions.jpg', 'static/images/Smart Porta Potty.jpg', 'static/images/Smart Restroom .jpg', 'static/images/Stack of Portable Toilet.jpg', 'static/images/The Portable toilet.jpg', ''], selectedData, `aasepticia.com`);
+        });
+
+    </script>
+    <br><br><br><br>
+    <div class="containeralooma" id="contact">
+        <section class="boxalooma">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="template4 h2alooma" style="margin-left: 0px; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;">Frequently Asked Questions</h2>
+                <h4 class="template4 palooma" style="font-size:medium;">What is the best way to estimate how many portable restrooms I need for an event?
+                </h4>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">For portable restrooms for events, a general rule is one unit per 50 guests for a 4-hour event. For longer events or those serving alcohol, increase to one per 40 guests. We provide detailed planning assistance.</p>
+                <h4 class="template4 palooma" style="font-size:large;">What is the biggest factor affecting portable toilet rental prices?
+                </h4>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The single biggest factor in portable restroom rental cost is usually the unit type. A standard unit is the most economical, while luxury restroom trailers are a premium investment due to their features and size.</p>
+                <h4 class="template4 palooma" style="font-size:large;">Do luxury portable toilets require electricity and water?
+                </h4>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Yes, most luxury portable toilets and all restroom trailers require a standard 110v electrical outlet for lighting and climate control, and a water hose connection for sink and toilet operation.</p>
+                <h4 class="template4 palooma" style="font-size:large;">What typically makes a porta potty 'fancy'?
+                </h4>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">A fancy porta potty rental often includes upgrades like a more durable and attractive exterior, improved interior lighting and ventilation, a hand sanitizer dispenser, and sometimes a small shelf or mirror.</p>
+                <h4 class="template4 palooma" style="font-size:large;">Should I choose a local or national portable toilet company?
+                </h4>
+                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">A national portable toilet business with local service hubs, like Us, offers the advantage of large-scale resources and standardized quality, combined with local delivery and service teams for responsiveness.</p>
+                <div class="callalooma mx-auto"><a href="tel:870-306-3280">Click Here To Call Us (870) 306-3280</a></div>
+            </div>
+        </div>
+        </section>
+       </div> 
+
+
+
+
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: transparent; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">States In USA</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ny/" id="aloomafotter">New York</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ca/" id="aloomafotter">California</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-il/" id="aloomafotter">Illinois</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-fl/" id="aloomafotter">Florida</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-tx/" id="aloomafotter">Texas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-pa/" id="aloomafotter">Pennsylvania</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ga/" id="aloomafotter">Georgia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-dc/" id="aloomafotter">District Of Columbia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ma/" id="aloomafotter">Massachusetts</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-az/" id="aloomafotter">Arizona</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mi/" id="aloomafotter">Michigan</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-wa/" id="aloomafotter">Washington</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mn/" id="aloomafotter">Minnesota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-co/" id="aloomafotter">Colorado</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-md/" id="aloomafotter">Maryland</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nv/" id="aloomafotter">Nevada</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mo/" id="aloomafotter">Missouri</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-or/" id="aloomafotter">Oregon</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-oh/" id="aloomafotter">Ohio</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-in/" id="aloomafotter">Indiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nc/" id="aloomafotter">North Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-va/" id="aloomafotter">Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-wi/" id="aloomafotter">Wisconsin</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ri/" id="aloomafotter">Rhode Island</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ut/" id="aloomafotter">Utah</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-tn/" id="aloomafotter">Tennessee</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ky/" id="aloomafotter">Kentucky</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ok/" id="aloomafotter">Oklahoma</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ct/" id="aloomafotter">Connecticut</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-la/" id="aloomafotter">Louisiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-hi/" id="aloomafotter">Hawaii</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ne/" id="aloomafotter">Nebraska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nm/" id="aloomafotter">New Mexico</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-al/" id="aloomafotter">Alabama</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-sc/" id="aloomafotter">South Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ia/" id="aloomafotter">Iowa</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ks/" id="aloomafotter">Kansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ar/" id="aloomafotter">Arkansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-id/" id="aloomafotter">Idaho</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ms/" id="aloomafotter">Mississippi</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nj/" id="aloomafotter">New Jersey</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-ak/" id="aloomafotter">Alaska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nh/" id="aloomafotter">New Hampshire</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-me/" id="aloomafotter">Maine</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-nd/" id="aloomafotter">North Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-wv/" id="aloomafotter">West Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-sd/" id="aloomafotter">South Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-de/" id="aloomafotter">Delaware</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mt/" id="aloomafotter">Montana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-vt/" id="aloomafotter">Vermont</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-wy/" id="aloomafotter">Wyoming</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: transparent; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">Most popular cities we serve</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-white-bear-lake-mn/" id="aloomafotter">White Bear Lake</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-atwood-tn/" id="aloomafotter">Atwood</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-elizabeth-pa/" id="aloomafotter">Elizabeth</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-orangetree-fl/" id="aloomafotter">Orangetree</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-moa-ut/" id="aloomafotter">Moab</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-pleasant-hill-tx/" id="aloomafotter">Pleasant Hill</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-denton-nc/" id="aloomafotter">Denton</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mcconnellsburg-pa/" id="aloomafotter">Mcconnellsburg</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-pike-creek-valley-de/" id="aloomafotter">Pike Creek Valley</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-marine-il/" id="aloomafotter">Marine</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-pratt-ks/" id="aloomafotter">Pratt</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-mauriceville-tx/" id="aloomafotter">Mauriceville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-thomson-ga/" id="aloomafotter">Thomson</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-lynn-in/" id="aloomafotter">Lynn</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-la-playa-pr/" id="aloomafotter">La Playa</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-hurlburt-field-fl/" id="aloomafotter">Hurlburt Field</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-beloit-wi/" id="aloomafotter">Beloit</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-runge-tx/" id="aloomafotter">Runge</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-braham-mn/" id="aloomafotter">Braham</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-springs-ny/" id="aloomafotter">Springs</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-port-angeles-wa/" id="aloomafotter">Port Angeles</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-merrionette-park-il/" id="aloomafotter">Merrionette Park</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-maiden-nc/" id="aloomafotter">Maiden</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-deming-nm/" id="aloomafotter">Deming</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-fletcher-nc/" id="aloomafotter">Fletcher</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-burbank-il/" id="aloomafotter">Burbank</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-waunakee-wi/" id="aloomafotter">Waunakee</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-orange-city-ia/" id="aloomafotter">Orange City</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-san-castle-fl/" id="aloomafotter">San Castle</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-glasgow-de/" id="aloomafotter">Glasgow</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/porta-potty-avondale-estates-ga/" id="aloomafotter">Avondale Estates</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-l-5 col-s-12 mx-auto box-1">
+
+                        <!-- Content -->
+                        <h5>Disclaimer</h5>
+                        <p>This site is a porta potty service designed to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-l-2 col-s-4 box-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5>Services</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="#review">Review</a>
+                            </li>
+                            <li>
+                                <a href="#ourservices">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center">
+                <div class="gradient"></div>
+                <p>© Porta Potty Rental, All Rights reserved.</p>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <div class="scroll-arrow" id="scrollArrow">&#8675;</div> <!-- Upward pointing arrow -->
+    <div class="callalooma mx-auto scroll-button" id="scrollButton" style="font-family: calibri;">
+  <a href="tel:870306-3280" 
+     class="btn call-btn text-white">
+     Click Here To Call Us (870) 306-3280
+  </a>
+</div>
+      
+      <script>
+         window.addEventListener('scroll', function() {
+               var button = document.getElementById('scrollButton');
+               var arrow = document.getElementById('scrollArrow');
+               if (window.scrollY > 500) {
+                  button.style.display = 'block';
+                  arrow.style.display = 'block';
+               } else {
+                  button.style.display = 'none';
+                  arrow.style.display = 'none';
+               }
+         });
+         // const data = {
+         //    "Maimi": "#mpcstate",
+         //    "Florida": "#mpccites",
+         //    "Arizona": "#mpccounty",
+         //    "Alaska": "#mpcstate",
+         //    "Utah": "#mpccites",
+         //    "Ohio": "#mpccounty",
+         //    "Arkansas": "#mpcstate",
+         //    "Cit": "#mpccites",
+         //    "Coun": "#mpccounty"
+         // };
+
+         // const searchBar = document.getElementById('searchBar');
+         // const resultsContainer = document.getElementById('results');
+
+         // searchBar.addEventListener('input', function() {
+         //    const query = searchBar.value.toLowerCase();
+         //    resultsContainer.innerHTML = '';
+
+         //    if (query) {
+         //          resultsContainer.style.display = 'flex'; // Show results container
+         //          for (const [key, value] of Object.entries(data)) {
+         //             if (key.toLowerCase().includes(query)) {
+         //                const resultItem = document.createElement('div');
+         //                resultItem.className = 'result-item';
+         //                resultItem.innerHTML = `<a href="${value}">${key}</a>`;
+         //                resultsContainer.appendChild(resultItem);
+         //             }
+         //          }
+         //    } else {
+         //          resultsContainer.style.display = 'none'; // Hide results container
+         //    }
+         // });
+      </script>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="static/js/animate.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+    </script>
+<script src="https://kit.fontawesome.com/c4c9a6665b.js" crossorigin="anonymous"></script></body>
+
+</html>
